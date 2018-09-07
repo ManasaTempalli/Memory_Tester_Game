@@ -1,0 +1,15 @@
+// ECE6370
+// Author: Manasa Tempalli 5355
+// Button Inverter
+module Button_Inverter(button_pulse,clk,rst,button_inv);
+ input button_pulse,clk,rst;
+ output reg button_inv;
+
+ always @ (posedge clk)
+ begin
+ if(rst==0)
+ button_inv<=0;
+ else
+ button_inv<=~(button_pulse);
+ end
+endmodule

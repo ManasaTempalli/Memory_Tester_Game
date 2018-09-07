@@ -1,0 +1,68 @@
+//MISSION-V
+//Top module of the project
+module Project_Top_Module(auth_button,log_out,rng_button,disp_button,toggle_user,toggle_pass,toggle_answer,red_led_user,green_led_user,red_led_rom,green_led_rom,red_led_ram,green_led_ram,green_max,loose,flash_seg,level_seg,seg_answer,seg_score_high,seg_score_low,time_show_high,time_show_low,clock,rst);
+ 
+ input auth_button,log_out,rng_button,disp_button;
+ input [3:0] toggle_user,toggle_pass,toggle_answer;
+ input clock,rst;
+ output red_led_user,green_led_user,red_led_rom,green_led_rom,red_led_ram,green_led_ram,loose,green_max,b;
+ output [6:0] flash_seg,level_seg,seg_answer,seg_score_high,seg_score_low,time_show_high,time_show_low;
+
+ wire auth_button_pulse,logout_pulse;
+ wire [15:0] entered_user,entered_pass;
+ wire valid_bit_user,valid_bit_pass,auth_bit,win,loose;
+ wire [2:0] internal_id;
+ wire ROM_access,RAM_access1,RAM_access2,password_change,auth_bit1,auth_bit2;
+ wire[6:0] status;
+ wire [3:0] level_num;
+ wire[3:0] seg_in_ans;
+ wire [4:0] flash_num;
+ wire rng_button_pulse,green_led_user,levelupdated;
+ wire [7:0] disp_out;
+ wire begin_timer,load_time;
+ wire [3:0] reconfig2;
+ wire [7:0] input_num;
+ wire time_stop,stop,twodigit;
+ wire [3:0] timedig1,timedig2;
+ 
+
+//Button shaping
+button_shaper b1(auth_button, auth_button_pulse, clock, rst);
+button_shaper b2(log_out, logout_pulse, clock, rst);
+button_shaper b3(rng_button, rng_button_pulse, clock, rst);
+
+
+//ROM User authentication
+ROM_User_ID_Top_Module rom_user2(toggle_user,auth_button_pulse,status,internal_id,ROM_access,RAM_access1,green_led_user,red_led_user,logout_pulse,clock,rst);
+ROM_Password_Top_Module rom_pass2(ROM_access,rng_button,auth_button_pulse,logout_pulse,toggle_pass,internal_id,auth_bit1,red_led_rom,green_led_rom,RAM_access2,password_change,clock,rst);
+RAM_Password_Reset_Top_Module ram_pass2(RAM_access1,RAM_access2,password_change,auth_button_pulse,toggle_pass,internal_id,status,logout_pulse,green_led_ram,red_led_ram,auth_bit2,clock,rst);
+
+or(auth_bit,auth_bit1,auth_bit2);
+//Level table integration with game module
+game_module gameleveltest(twodigit,time_stop,begin_timer,reconfig2,input_num,load_time,stop,levelupdated,logout_pulse,rng_button,auth_bit,auth_button_pulse,level_num,toggle_answer,flash_num,win,loose,seg_in_ans,clock,rst);
+level_top_module levelgametest(levelupdated,green_led_user,auth_button_pulse,logout_pulse,auth_bit,win,internal_id,level_num,clock,rst);
+
+//setting timer
+two_digit_timer twodigtimeinst(clock,rst,twodigit,begin_timer,load_time,reconfig2,input_num,time_stop,timedig1,timedig2,stop,b);
+
+//score table
+score_table scoreinsttop(clock,rst,logout_pulse,green_led_user,internal_id,auth_bit,win,loose,disp_button,level_num,disp_out,green_max);
+
+//number flashing seven segment
+seven_seg5 sevenseg_inst(flash_num, flash_seg);
+
+//level number seven segment
+seven_seg sevenseg_level_inst(level_num,level_seg);
+
+//answer showing seven segment
+seven_seg sevenseg_answer_inst(seg_in_ans,seg_answer);
+
+//score showing seven segment
+seven_seg sevenseg_score_inst(disp_out[7:4],seg_score_high);
+seven_seg sevenseg_score_inst2(disp_out[3:0],seg_score_low);
+
+//timer seven segment
+seven_seg sevenseg_timer_inst1(timedig2,time_show_high);
+seven_seg sevenseg_timer_inst2(timedig1,time_show_low);
+
+endmodule

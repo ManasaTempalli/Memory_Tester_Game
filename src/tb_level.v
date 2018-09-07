@@ -1,0 +1,117 @@
+//MISSION-V
+//testbench for level table
+`timescale 1 ps/1 ps
+module tb_level();
+reg clock,rst;
+reg rng_button,log_out,auth_bit,win,green_user;
+reg [2:0] internal_id;
+wire [3:0] level_num;
+wire levelupdated;
+ 
+level_top_module test_level(levelupdated,green_user,rng_button,log_out,auth_bit,win,internal_id,level_num,clock,rst);
+always
+begin
+ clock=0;
+ #10;
+ clock=1;
+ #10;
+end
+ 
+initial 
+begin
+ rst=0;
+ @(posedge clock);
+ #5 rst=1;internal_id=3'b001;green_user=1;
+ @(posedge clock);
+ #5 auth_bit=1;
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ #5 win=1;
+ @(posedge clock);
+ #5 win=0;
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ #5 win=1;
+ @(posedge clock);
+ #5 win=0;
+ @(posedge clock);
+ #5 rng_button=1;
+ @(posedge clock);
+ #5 rng_button=0;
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ #5 win=1;
+ @(posedge clock);
+ #5 win=0;
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ #5 win=1;
+ @(posedge clock);
+ #5 win=0;
+ @(posedge clock);
+ #5 log_out=1; 
+ @(posedge clock);
+ #5 log_out=0;
+ #5 internal_id=3'b001;
+ @(posedge clock);
+ #5 auth_bit=1;
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ #5 green_user=0;
+ @(posedge clock);
+ #5 win=1;
+ @(posedge clock);
+ #5 win=0;
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ #5 win=1;
+ @(posedge clock);
+ #5 win=0;
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ @(posedge clock);
+ #5 rng_button=1;
+ @(posedge clock);
+ #5 rng_button=0;
+ 
+ 
+end
+endmodule

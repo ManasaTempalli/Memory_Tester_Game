@@ -1,0 +1,42 @@
+module reconfig_counter(clock,rst,reconfig,time_out,time_in);
+ input time_in,clock,rst;
+ input [3:0] reconfig;
+ output  reg time_out;
+ 
+ reg [3:0] count;
+ reg[0:0] state;
+ parameter INIT=0,begin_count=1;
+
+always @(posedge clock)
+begin
+ if(rst==0)
+ begin
+  time_out<=0;
+  count<=reconfig;
+  state<=INIT;
+ end
+ else
+ begin
+ case(state)
+  INIT:
+  begin
+  time_out<=0;
+  count<=reconfig;
+  if(time_in==1)
+  begin
+   state<=begin_count;
+  end
+  end
+  begin_count:
+  begin
+   count<=count-1;
+   if(count==0)
+   begin
+    time_out<=1;
+    state<=INIT;
+   end
+  end
+ endcase
+ end
+end
+endmodule

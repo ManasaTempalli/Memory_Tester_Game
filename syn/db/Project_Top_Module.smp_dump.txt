@@ -1,0 +1,127 @@
+
+State Machine - |Project_Top_Module|score_table:scoreinsttop|score_controller:scorecont1|state
+Name state.update_team_max state.wait7 state.wait6 state.wait5 state.update_RAM state.wait_for_win state.read_ind_score state.wait4 state.wait3 state.read_team_max state.wait2 state.wait1 state.INIT 
+state.INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.wait1 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.wait2 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.read_team_max 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.wait3 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.wait4 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.read_ind_score 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.wait_for_win 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.update_RAM 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.wait5 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.wait6 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.wait7 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.update_team_max 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Project_Top_Module|level_top_module:levelgametest|Level_Controller:level_con1|state
+Name state.halt state.win_wait state.level_update state.level_inc state.level_check state.wait2 state.wait1 state.INIT state.halt2 
+state.INIT 0 0 0 0 0 0 0 0 0 
+state.wait1 0 0 0 0 0 0 1 1 0 
+state.wait2 0 0 0 0 0 1 0 1 0 
+state.level_check 0 0 0 0 1 0 0 1 0 
+state.level_inc 0 0 0 1 0 0 0 1 0 
+state.level_update 0 0 1 0 0 0 0 1 0 
+state.win_wait 0 1 0 0 0 0 0 1 0 
+state.halt 1 0 0 0 0 0 0 1 0 
+state.halt2 0 0 0 0 0 0 0 1 1 
+
+State Machine - |Project_Top_Module|game_module:gameleveltest|Comparision:comp1|result_comp:res1|state
+Name state.wait_for_level state.comp_res state.wait_for_rng state.INIT 
+state.INIT 0 0 0 0 
+state.wait_for_rng 0 0 1 1 
+state.comp_res 0 1 0 1 
+state.wait_for_level 1 0 0 1 
+
+State Machine - |Project_Top_Module|game_module:gameleveltest|RSG:rsg2|Random_seq:rs1|state
+Name state.halt state.timer state.wait_for_sec2 state.flash0 state.wait_for_sec state.get_seq state.wait2 state.wait1 state.seq_ON state.INIT 
+state.INIT 0 0 0 0 0 0 0 0 0 0 
+state.seq_ON 0 0 0 0 0 0 0 0 1 1 
+state.wait1 0 0 0 0 0 0 0 1 0 1 
+state.wait2 0 0 0 0 0 0 1 0 0 1 
+state.get_seq 0 0 0 0 0 1 0 0 0 1 
+state.wait_for_sec 0 0 0 0 1 0 0 0 0 1 
+state.flash0 0 0 0 1 0 0 0 0 0 1 
+state.wait_for_sec2 0 0 1 0 0 0 0 0 0 1 
+state.timer 0 1 0 0 0 0 0 0 0 1 
+state.halt 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Project_Top_Module|RAM_Password_Reset_Top_Module:ram_pass2|RAM_access_control:RAM_control1|state
+Name state.halt state.fail state.success state.compare state.delay2 state.delay1 state.RAM_addr state.password_check state.update_done state.update state.password_update state.INIT 
+state.INIT 0 0 0 0 0 0 0 0 0 0 0 0 
+state.password_update 0 0 0 0 0 0 0 0 0 0 1 1 
+state.update 0 0 0 0 0 0 0 0 0 1 0 1 
+state.update_done 0 0 0 0 0 0 0 0 1 0 0 1 
+state.password_check 0 0 0 0 0 0 0 1 0 0 0 1 
+state.RAM_addr 0 0 0 0 0 0 1 0 0 0 0 1 
+state.delay1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.delay2 0 0 0 0 1 0 0 0 0 0 0 1 
+state.compare 0 0 0 1 0 0 0 0 0 0 0 1 
+state.success 0 0 1 0 0 0 0 0 0 0 0 1 
+state.fail 0 1 0 0 0 0 0 0 0 0 0 1 
+state.halt 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Project_Top_Module|RAM_Password_Reset_Top_Module:ram_pass2|Shift_Reg:shif_ram_1|state
+Name state.enter state.load state.button_wait state.INIT state.halt 
+state.INIT 0 0 0 0 0 
+state.button_wait 0 0 1 1 0 
+state.load 0 1 0 1 0 
+state.enter 1 0 0 1 0 
+state.halt 0 0 0 1 1 
+
+State Machine - |Project_Top_Module|ROM_Password_Top_Module:rom_pass2|ROM_Password_Control:ROM_Password_control1|state
+Name state.halt state.failed state.success state.compare state.delay2 state.delay1 state.ROM_addr state.INIT 
+state.INIT 0 0 0 0 0 0 0 0 
+state.ROM_addr 0 0 0 0 0 0 1 1 
+state.delay1 0 0 0 0 0 1 0 1 
+state.delay2 0 0 0 0 1 0 0 1 
+state.compare 0 0 0 1 0 0 0 1 
+state.success 0 0 1 0 0 0 0 1 
+state.failed 0 1 0 0 0 0 0 1 
+state.halt 1 0 0 0 0 0 0 1 
+
+State Machine - |Project_Top_Module|ROM_Password_Top_Module:rom_pass2|Shift_Reg:shif_rompass1|state
+Name state.enter state.load state.button_wait state.INIT state.halt 
+state.INIT 0 0 0 0 0 
+state.button_wait 0 0 1 1 0 
+state.load 0 1 0 1 0 
+state.enter 1 0 0 1 0 
+state.halt 0 0 0 1 1 
+
+State Machine - |Project_Top_Module|ROM_User_ID_Top_Module:rom_user2|ROM_User_ID_Control:ROM_user_control1|state
+Name state.halt state.fail state.ROM_RAM_access state.comparing state.delay2 state.delay1 state.ROM_addr state.INIT 
+state.INIT 0 0 0 0 0 0 0 0 
+state.ROM_addr 0 0 0 0 0 0 1 1 
+state.delay1 0 0 0 0 0 1 0 1 
+state.delay2 0 0 0 0 1 0 0 1 
+state.comparing 0 0 0 1 0 0 0 1 
+state.ROM_RAM_access 0 0 1 0 0 0 0 1 
+state.fail 0 1 0 0 0 0 0 1 
+state.halt 1 0 0 0 0 0 0 1 
+
+State Machine - |Project_Top_Module|ROM_User_ID_Top_Module:rom_user2|Shift_Reg:shift1|state
+Name state.enter state.load state.button_wait state.INIT state.halt 
+state.INIT 0 0 0 0 0 
+state.button_wait 0 0 1 1 0 
+state.load 0 1 0 1 0 
+state.enter 1 0 0 1 0 
+state.halt 0 0 0 1 1 
+
+State Machine - |Project_Top_Module|button_shaper:b3|state
+Name state.s_wait state.state2 state.state1 
+state.s_wait 0 0 0 
+state.state1 1 0 1 
+state.state2 1 1 0 
+
+State Machine - |Project_Top_Module|button_shaper:b2|state
+Name state.s_wait state.state2 state.state1 
+state.s_wait 0 0 0 
+state.state1 1 0 1 
+state.state2 1 1 0 
+
+State Machine - |Project_Top_Module|button_shaper:b1|state
+Name state.s_wait state.state2 state.state1 
+state.s_wait 0 0 0 
+state.state1 1 0 1 
+state.state2 1 1 0 

@@ -1,0 +1,40 @@
+// ECE6370
+// Author: Manasa Tempalli 5355
+//4 bit binary counter
+module four_Bit_Binary_Counter(button_inv,clk,rst,random_num,enable);
+ input button_inv,clk,rst;
+ output reg [3:0] random_num;
+ output reg enable;
+ reg [3:0] count;
+ reg flag;
+
+always @(posedge clk)
+begin
+if(rst==0)
+begin
+ count<=4'b0000;
+ random_num<=4'b0000;
+ enable<=0;
+ flag=0;
+end
+else
+begin
+ if(button_inv==1)
+ begin
+ flag<=1;
+ enable<=0;
+ count<=count+4'b0001;
+ end
+ else
+ begin
+ if(flag==1)
+ begin
+ flag<=0;
+ enable<=1;
+ random_num<=count;
+ end
+ else enable<=0;
+ end
+end
+end
+endmodule

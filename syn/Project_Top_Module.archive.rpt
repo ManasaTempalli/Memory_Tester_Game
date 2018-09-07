@@ -1,0 +1,178 @@
+Archive Project report for Project_Top_Module
+Sat May 12 02:12:43 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sat May 12 02:12:43 2018 ;
+; Revision Name          ; Project_Top_Module                    ;
+; Top-level Entity Name  ; Project_Top_Module                    ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/ADD_Project/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/ADD_Project/syn/Project_Top_Module.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Project_Top_Module.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 687 megabytes
+    Info: Processing ended: Sat May 12 02:12:43 2018
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:05
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; ../src/Button_Inverter.v                                     ;
+; ../src/button_shaper.v                                       ;
+; ../src/Comparision.v                                         ;
+; ../src/four_Bit_Binary_Counter.v                             ;
+; ../src/game_module.v                                         ;
+; ../src/Level_Controller.v                                    ;
+; ../src/level_table.v                                         ;
+; ../src/level_top_module.v                                    ;
+; ../src/LFSR.v                                                ;
+; ../src/load_register.v                                       ;
+; ../src/Project_Top_Module.v                                  ;
+; ../src/RAM_access_control.v                                  ;
+; ../src/RAM_Password_Reset_Module.v                           ;
+; ../src/RAM_Password_Reset_Top_Module.v                       ;
+; ../src/Random_seq.v                                          ;
+; ../src/reconfig_count.v                                      ;
+; ../src/Reconfig_timer.v                                      ;
+; ../src/result_comp.v                                         ;
+; ../src/RNG.v                                                 ;
+; ../src/ROM_Password_Control.v                                ;
+; ../src/ROM_Password_Module.v                                 ;
+; ../src/ROM_Password_Top_Module.v                             ;
+; ../src/ROM_seq.v                                             ;
+; ../src/ROM_User_ID_Control.v                                 ;
+; ../src/ROM_User_ID_Module.v                                  ;
+; ../src/ROM_User_ID_Top_Module.v                              ;
+; ../src/RSG.v                                                 ;
+; ../src/score_controller.v                                    ;
+; ../src/score_conv.v                                          ;
+; ../src/score_table.v                                         ;
+; ../src/seven_seg.v                                           ;
+; ../src/seven_seg5.v                                          ;
+; ../src/Shift_Reg.v                                           ;
+; ../src/shift_reg_28.v                                        ;
+; ../src/ten_counter.v                                         ;
+; ../src/timer_digit.v                                         ;
+; ../src/timer_digit2.v                                        ;
+; ../src/two_digit_timer.v                                     ;
+; C:/ADD_Project/src/Button_Inverter.v                         ;
+; C:/ADD_Project/src/button_shaper.v                           ;
+; C:/ADD_Project/src/Comparision.v                             ;
+; C:/ADD_Project/src/four_Bit_Binary_Counter.v                 ;
+; C:/ADD_Project/src/game_module.v                             ;
+; C:/ADD_Project/src/Level_Controller.v                        ;
+; C:/ADD_Project/src/level_table.v                             ;
+; C:/ADD_Project/src/level_top_module.v                        ;
+; C:/ADD_Project/src/LFSR.v                                    ;
+; C:/ADD_Project/src/load_register.v                           ;
+; C:/ADD_Project/src/Project_Top_Module.v                      ;
+; C:/ADD_Project/src/RAM_access_control.v                      ;
+; C:/ADD_Project/src/RAM_Password_Reset_Module.v               ;
+; C:/ADD_Project/src/RAM_Password_Reset_Top_Module.v           ;
+; C:/ADD_Project/src/Random_seq.v                              ;
+; C:/ADD_Project/src/reconfig_count.v                          ;
+; C:/ADD_Project/src/Reconfig_timer.v                          ;
+; C:/ADD_Project/src/result_comp.v                             ;
+; C:/ADD_Project/src/RNG.v                                     ;
+; C:/ADD_Project/src/ROM_Password_Control.v                    ;
+; C:/ADD_Project/src/ROM_Password_Module.v                     ;
+; C:/ADD_Project/src/ROM_Password_Top_Module.v                 ;
+; C:/ADD_Project/src/ROM_seq.v                                 ;
+; C:/ADD_Project/src/ROM_User_ID_Control.v                     ;
+; C:/ADD_Project/src/ROM_User_ID_Module.v                      ;
+; C:/ADD_Project/src/ROM_User_ID_Top_Module.v                  ;
+; C:/ADD_Project/src/RSG.v                                     ;
+; C:/ADD_Project/src/score_controller.v                        ;
+; C:/ADD_Project/src/score_conv.v                              ;
+; C:/ADD_Project/src/score_table.v                             ;
+; C:/ADD_Project/src/seven_seg.v                               ;
+; C:/ADD_Project/src/seven_seg5.v                              ;
+; C:/ADD_Project/src/Shift_Reg.v                               ;
+; C:/ADD_Project/src/shift_reg_28.v                            ;
+; C:/ADD_Project/src/ten_counter.v                             ;
+; C:/ADD_Project/src/timer_digit.v                             ;
+; C:/ADD_Project/src/timer_digit2.v                            ;
+; C:/ADD_Project/src/two_digit_timer.v                         ;
+; c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf ;
+; level_table.qip                                              ;
+; level_table.v                                                ;
+; level_table_bb.v                                             ;
+; level_table_mif.mif                                          ;
+; Project_Top_Module.qpf                                       ;
+; Project_Top_Module.qsf                                       ;
+; RAM_mif.mif                                                  ;
+; RAM_Password_Reset_Module.qip                                ;
+; RAM_Password_Reset_Module.v                                  ;
+; RAM_Password_Reset_Module_bb.v                               ;
+; RAM_score.mif                                                ;
+; RAM_score_module.qip                                         ;
+; RAM_score_module.v                                           ;
+; RAM_score_module_bb.v                                        ;
+; ROM_Password_mif.mif                                         ;
+; ROM_Password_Module.qip                                      ;
+; ROM_Password_Module.v                                        ;
+; ROM_Password_Module_bb.v                                     ;
+; ROM_seq.qip                                                  ;
+; ROM_seq.v                                                    ;
+; ROM_seq_bb.v                                                 ;
+; ROM_sequence_mif.mif                                         ;
+; ROM_User_ID_mif.mif                                          ;
+; ROM_User_ID_Module.qip                                       ;
+; ROM_User_ID_Module.v                                         ;
+; ROM_User_ID_Module_bb.v                                      ;
++--------------------------------------------------------------+
+
+

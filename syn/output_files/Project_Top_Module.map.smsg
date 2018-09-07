@@ -1,0 +1,7 @@
+Warning (10268): Verilog HDL information at timer_digit2.v(13): always construct contains both blocking and non-blocking assignments File: C:/ADD_Project/src/timer_digit2.v Line: 13
+Warning (10268): Verilog HDL information at ten_counter.v(6): always construct contains both blocking and non-blocking assignments File: C:/ADD_Project/src/ten_counter.v Line: 6
+Warning (10268): Verilog HDL information at reconfig_count.v(7): always construct contains both blocking and non-blocking assignments File: C:/ADD_Project/src/reconfig_count.v Line: 7
+Warning (10268): Verilog HDL information at LFSR.v(10): always construct contains both blocking and non-blocking assignments File: C:/ADD_Project/src/LFSR.v Line: 10
+Warning (10268): Verilog HDL information at score_conv.v(9): always construct contains both blocking and non-blocking assignments File: C:/ADD_Project/src/score_conv.v Line: 9
+Warning (10268): Verilog HDL information at ROM_Password_Control.v(18): always construct contains both blocking and non-blocking assignments File: C:/ADD_Project/src/ROM_Password_Control.v Line: 18
+Warning (10268): Verilog HDL information at four_Bit_Binary_Counter.v(11): always construct contains both blocking and non-blocking assignments File: C:/ADD_Project/src/four_Bit_Binary_Counter.v Line: 11

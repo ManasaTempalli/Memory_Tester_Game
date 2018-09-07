@@ -1,0 +1,14 @@
+module game_level(rng_button,auth_bit,punch_button,log_out,clock,rst,toggle_answer,internal_id,flash_num,loose);
+input rng_button,auth_bit,punch_button,log_out,clock,rst;
+input [3:0] toggle_answer;
+input [2:0] internal_id;
+output [3:0] flash_num;
+output  loose;
+wire win;
+wire[3:0] level_num;
+
+
+game_module gameleveltest(rng_button,auth_bit,punch_button,level_num,toggle_answer,flash_num,win,loose,clock,rst);
+level_top_module levelgametest(rng_button,log_out,auth_bit,win,internal_id,level_num,clock,rst);
+
+endmodule

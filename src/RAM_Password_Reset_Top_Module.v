@@ -1,0 +1,17 @@
+//MISSION-V
+//RAM Password Reset Top Module
+module RAM_Password_Reset_Top_Module(RAM_access1,RAM_access2,password_change,auth_button,toggle_entry,internal_id,status,log_out,green_led,red_led,auth_bit,clock,rst);
+ input RAM_access1,RAM_access2,password_change,log_out,auth_button;
+ input [3:0] toggle_entry;
+ input [2:0] internal_id;
+ input clock,rst;
+ output [6:0] status;
+ output green_led,red_led,auth_bit;
+ wire [2:0] address;
+ wire [15:0] password,data;
+ wire wren,valid_bit;
+ wire [15:0] entered;
+
+Shift_Reg shif_ram_1(RAM_access1,RAM_access2,toggle_entry,auth_button,log_out,entered,valid_bit,clock,rst);
+RAM_access_control RAM_control1(RAM_access1,RAM_access2,password_change,internal_id,auth_button,wren,entered,valid_bit,data,address,password,status,log_out,green_led,red_led,auth_bit,clock,rst);RAM_Password_Reset_Module RAM_module1(address,clock,data,wren,password);
+endmodule

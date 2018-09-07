@@ -1,0 +1,309 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "red_led_user",
+					"strict" : false
+				},
+				{
+					"name" : "green_led_user",
+					"strict" : false
+				},
+				{
+					"name" : "red_led_rom",
+					"strict" : false
+				},
+				{
+					"name" : "green_led_rom",
+					"strict" : false
+				},
+				{
+					"name" : "red_led_ram",
+					"strict" : false
+				},
+				{
+					"name" : "green_led_ram",
+					"strict" : false
+				},
+				{
+					"name" : "green_max",
+					"strict" : false
+				},
+				{
+					"name" : "loose",
+					"strict" : false
+				},
+				{
+					"name" : "flash_seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "level_seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "level_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "level_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "level_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "level_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "level_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "level_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_answer[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_answer[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_answer[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_answer[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_answer[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_answer[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_answer[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_high[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_high[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_high[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_high[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_high[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_high[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_high[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_low[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_low[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_low[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_low[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_low[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_low[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_score_low[6]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_high[0]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_high[1]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_high[2]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_high[3]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_high[4]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_high[5]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_high[6]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_low[0]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_low[1]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_low[2]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_low[3]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_low[4]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_low[5]",
+					"strict" : false
+				},
+				{
+					"name" : "time_show_low[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "rng_button",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_answer[0]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_answer[1]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_answer[2]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_answer[3]",
+					"strict" : false
+				},
+				{
+					"name" : "log_out",
+					"strict" : false
+				},
+				{
+					"name" : "auth_button",
+					"strict" : false
+				},
+				{
+					"name" : "disp_button",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_user[1]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_user[0]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_user[3]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_user[2]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_pass[1]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_pass[0]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_pass[3]",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_pass[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

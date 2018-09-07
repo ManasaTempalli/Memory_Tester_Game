@@ -1,0 +1,414 @@
+C:/ADD_Project/src/result_comp.v {1 {vlog -work work -stats=none C:/ADD_Project/src/result_comp.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module result_comp
+
+Top level modules:
+	result_comp
+
+} {} {}} C:/ADD_Project/src/ROM_User_ID_Module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/ROM_User_ID_Module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_User_ID_Module
+
+Top level modules:
+	ROM_User_ID_Module
+
+} {} {}} C:/ADD_Project/src/reconfig_count.v {1 {vlog -work work -stats=none C:/ADD_Project/src/reconfig_count.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reconfig_count
+
+Top level modules:
+	reconfig_count
+
+} {} {}} C:/ADD_Project/src/tb_ROM_Password_Top.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_ROM_Password_Top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_ROM_Password_Top
+
+Top level modules:
+	tb_ROM_Password_Top
+
+} {} {}} C:/ADD_Project/src/tb_shift_reg.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_shift_reg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_shift_reg
+
+Top level modules:
+	tb_shift_reg
+
+} {} {}} C:/ADD_Project/src/tb_Top.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_Top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_Top
+
+Top level modules:
+	tb_Top
+
+} {} {}} C:/ADD_Project/src/timecount.v {1 {vlog -work work -stats=none C:/ADD_Project/src/timecount.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module timecount
+
+Top level modules:
+	timecount
+
+} {} {}} C:/ADD_Project/src/RAM_score_module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/RAM_score_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM_score_module
+
+Top level modules:
+	RAM_score_module
+
+} {} {}} C:/ADD_Project/src/RAM_Password_Reset_Module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/RAM_Password_Reset_Module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM_Password_Reset_Module
+
+Top level modules:
+	RAM_Password_Reset_Module
+
+} {} {}} C:/ADD_Project/src/tb_sevenseg.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_sevenseg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_sevenseg
+
+Top level modules:
+	tb_sevenseg
+
+} {} {}} C:/ADD_Project/src/tb_timer_100ms.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_timer_100ms.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_timer_100ms
+
+Top level modules:
+	tb_timer_100ms
+
+} {} {}} C:/ADD_Project/src/tb_timer.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_timer.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_timer
+
+Top level modules:
+	tb_timer
+
+} {} {}} C:/ADD_Project/src/LFSR.v {1 {vlog -work work -stats=none C:/ADD_Project/src/LFSR.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module LFSR
+
+Top level modules:
+	LFSR
+
+} {} {}} C:/ADD_Project/src/game_module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/game_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module game_module
+
+Top level modules:
+	game_module
+
+} {} {}} C:/ADD_Project/src/tb_gamelevel.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_gamelevel.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_gamelevel
+
+Top level modules:
+	tb_gamelevel
+
+} {} {}} C:/ADD_Project/src/ROM_Password_Control.v {1 {vlog -work work -stats=none C:/ADD_Project/src/ROM_Password_Control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_Password_Control
+
+Top level modules:
+	ROM_Password_Control
+
+} {} {}} C:/ADD_Project/src/tb_score.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_score.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_score
+
+Top level modules:
+	tb_score
+
+} {} {}} C:/ADD_Project/src/timer_digit.v {1 {vlog -work work -stats=none C:/ADD_Project/src/timer_digit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module timer_digit
+
+Top level modules:
+	timer_digit
+
+} {} {}} C:/ADD_Project/src/score_conv.v {1 {vlog -work work -stats=none C:/ADD_Project/src/score_conv.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module score_conv
+
+Top level modules:
+	score_conv
+
+} {} {}} C:/ADD_Project/src/score_table.v {1 {vlog -work work -stats=none C:/ADD_Project/src/score_table.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module score_table
+
+Top level modules:
+	score_table
+
+} {} {}} C:/ADD_Project/src/tb_RNG.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_RNG.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_RNG
+
+Top level modules:
+	tb_RNG
+
+} {} {}} C:/ADD_Project/src/reconfig_counter.v {1 {vlog -work work -stats=none C:/ADD_Project/src/reconfig_counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reconfig_counter
+
+Top level modules:
+	reconfig_counter
+
+} {} {}} C:/ADD_Project/src/four_Bit_Binary_Counter.v {1 {vlog -work work -stats=none C:/ADD_Project/src/four_Bit_Binary_Counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module four_Bit_Binary_Counter
+
+Top level modules:
+	four_Bit_Binary_Counter
+
+} {} {}} C:/ADD_Project/src/Project_Top_Module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/Project_Top_Module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Project_Top_Module
+
+Top level modules:
+	Project_Top_Module
+
+} {} {}} C:/ADD_Project/src/ROM_User_ID_Control.v {1 {vlog -work work -stats=none C:/ADD_Project/src/ROM_User_ID_Control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_User_ID_Control
+
+Top level modules:
+	ROM_User_ID_Control
+
+} {} {}} C:/ADD_Project/src/two_digit_timer.v {1 {vlog -work work -stats=none C:/ADD_Project/src/two_digit_timer.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module two_digit_timer
+
+Top level modules:
+	two_digit_timer
+
+} {} {}} C:/ADD_Project/src/Button_Inverter.v {1 {vlog -work work -stats=none C:/ADD_Project/src/Button_Inverter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Button_Inverter
+
+Top level modules:
+	Button_Inverter
+
+} {} {}} C:/ADD_Project/src/load_register.v {1 {vlog -work work -stats=none C:/ADD_Project/src/load_register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module load_register
+
+Top level modules:
+	load_register
+
+} {} {}} C:/ADD_Project/src/tb_lfsr.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_lfsr.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_lfsr
+
+Top level modules:
+	tb_lfsr
+
+} {} {}} C:/ADD_Project/src/tb_RAM_Password_Reset_Module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_RAM_Password_Reset_Module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_RAM_Password_Reset_Module
+
+Top level modules:
+	tb_RAM_Password_Reset_Module
+
+} {} {}} C:/ADD_Project/src/ROM_Password_Top_Module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/ROM_Password_Top_Module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_Password_Top_Module
+
+Top level modules:
+	ROM_Password_Top_Module
+
+} {} {}} C:/ADD_Project/src/tb_RNS.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_RNS.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_RNS
+
+Top level modules:
+	tb_RNS
+
+} {} {}} C:/ADD_Project/src/Comparision.v {1 {vlog -work work -stats=none C:/ADD_Project/src/Comparision.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Comparision
+
+Top level modules:
+	Comparision
+
+} {} {}} C:/ADD_Project/src/Reconfig_timer.v {1 {vlog -work work -stats=none C:/ADD_Project/src/Reconfig_timer.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Reconfig_timer
+
+Top level modules:
+	Reconfig_timer
+
+} {} {}} C:/ADD_Project/src/tb_level.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_level.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_level
+
+Top level modules:
+	tb_level
+
+} {} {}} C:/ADD_Project/src/button_shaper.v {1 {vlog -work work -stats=none C:/ADD_Project/src/button_shaper.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module button_shaper
+
+Top level modules:
+	button_shaper
+
+} {} {}} C:/ADD_Project/src/tb_ROM_User_ID_Top.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_ROM_User_ID_Top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_ROM_User_ID_Top
+
+Top level modules:
+	tb_ROM_User_ID_Top
+
+} {} {}} C:/ADD_Project/src/level_table.v {1 {vlog -work work -stats=none C:/ADD_Project/src/level_table.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module level_table
+
+Top level modules:
+	level_table
+
+} {} {}} C:/ADD_Project/src/ROM_User_ID_Top_Module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/ROM_User_ID_Top_Module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_User_ID_Top_Module
+
+Top level modules:
+	ROM_User_ID_Top_Module
+
+} {} {}} C:/ADD_Project/src/level_top_module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/level_top_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module level_top_module
+
+Top level modules:
+	level_top_module
+
+} {} {}} C:/ADD_Project/src/seven_seg.v {1 {vlog -work work -stats=none C:/ADD_Project/src/seven_seg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module seven_seg
+
+Top level modules:
+	seven_seg
+
+} {} {}} C:/ADD_Project/src/timer_100ms.v {1 {vlog -work work -stats=none C:/ADD_Project/src/timer_100ms.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module timer_100ms
+
+Top level modules:
+	timer_100ms
+
+} {} {}} C:/ADD_Project/src/tb_reconfig.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_reconfig.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_reconfig
+
+Top level modules:
+	tb_reconfig
+
+} {} {}} C:/ADD_Project/src/Level_Controller.v {1 {vlog -work work -stats=none C:/ADD_Project/src/Level_Controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Level_Controller
+
+Top level modules:
+	Level_Controller
+
+} {} {}} C:/ADD_Project/src/RAM_Password_Reset_Top_Module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/RAM_Password_Reset_Top_Module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM_Password_Reset_Top_Module
+
+Top level modules:
+	RAM_Password_Reset_Top_Module
+
+} {} {}} C:/ADD_Project/src/RSG.v {1 {vlog -work work -stats=none C:/ADD_Project/src/RSG.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RSG
+
+Top level modules:
+	RSG
+
+} {} {}} C:/ADD_Project/src/seven_seg5.v {1 {vlog -work work -stats=none C:/ADD_Project/src/seven_seg5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module seven_seg5
+
+Top level modules:
+	seven_seg5
+
+} {} {}} C:/ADD_Project/src/shift_reg_28.v {1 {vlog -work work -stats=none C:/ADD_Project/src/shift_reg_28.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shift_reg_28
+
+Top level modules:
+	shift_reg_28
+
+} {} {}} C:/ADD_Project/src/RNG.v {1 {vlog -work work -stats=none C:/ADD_Project/src/RNG.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RNG
+
+Top level modules:
+	RNG
+
+} {} {}} C:/ADD_Project/src/Random_seq.v {1 {vlog -work work -stats=none C:/ADD_Project/src/Random_seq.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Random_seq
+
+Top level modules:
+	Random_seq
+
+} {} {}} C:/ADD_Project/src/Shift_Reg.v {1 {vlog -work work -stats=none C:/ADD_Project/src/Shift_Reg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Shift_Reg
+
+Top level modules:
+	Shift_Reg
+
+} {} {}} C:/ADD_Project/src/timer_digit2.v {1 {vlog -work work -stats=none C:/ADD_Project/src/timer_digit2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module timer_digit2
+
+Top level modules:
+	timer_digit2
+
+} {} {}} C:/ADD_Project/src/ROM_seq.v {1 {vlog -work work -stats=none C:/ADD_Project/src/ROM_seq.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_seq
+
+Top level modules:
+	ROM_seq
+
+} {} {}} C:/ADD_Project/src/score_controller.v {1 {vlog -work work -stats=none C:/ADD_Project/src/score_controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module score_controller
+
+Top level modules:
+	score_controller
+
+} {} {}} C:/ADD_Project/src/tb_game.v {1 {vlog -work work -stats=none C:/ADD_Project/src/tb_game.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_game
+
+Top level modules:
+	tb_game
+
+} {} {}} C:/ADD_Project/src/RAM_access_control.v {1 {vlog -work work -stats=none C:/ADD_Project/src/RAM_access_control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM_access_control
+
+Top level modules:
+	RAM_access_control
+
+} {} {}} C:/ADD_Project/src/game_level.v {1 {vlog -work work -stats=none C:/ADD_Project/src/game_level.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module game_level
+
+Top level modules:
+	game_level
+
+} {} {}} C:/ADD_Project/src/ROM_Password_Module.v {1 {vlog -work work -stats=none C:/ADD_Project/src/ROM_Password_Module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM_Password_Module
+
+Top level modules:
+	ROM_Password_Module
+
+} {} {}} C:/ADD_Project/src/ten_counter.v {1 {vlog -work work -stats=none C:/ADD_Project/src/ten_counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ten_counter
+
+Top level modules:
+	ten_counter
+
+} {} {}}

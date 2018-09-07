@@ -1,0 +1,61 @@
+module timer_digit(decrement,load,clk,rst,inp_num,number1,out_upOrDown,borrow,input_upOrDown);
+	input decrement,input_upOrDown,load;
+	input clk,rst; 
+	input [3:0]inp_num; 
+	output reg [3:0]number1;
+	output reg out_upOrDown,borrow;
+	
+	reg flag;
+	reg [3:0]num;
+
+	  always @(posedge clk)
+	  begin
+		if (rst==0)begin
+			number1<=0;
+			num<=0;
+			flag<=0;
+			out_upOrDown<=0;borrow<=0;
+		end
+		else begin
+			if(load==1)  begin				
+				num<= inp_num;
+				out_upOrDown<=0;
+                                borrow<=0;
+				flag<=1;
+			end
+			if(flag==1) begin
+				
+				if(num > 4'b1001) begin
+					number1<=4'b1001;
+				end
+				if(decrement ==1) begin
+				
+					if( num == 4'b0001) begin
+						num <=num-1;
+					end
+					else if(num==4'b0000) begin
+						if(input_upOrDown==0) begin
+							num<=4'b1001;
+							out_upOrDown<=0;
+							borrow<=1;
+						end
+						else begin			
+							num<=4'b0000;
+							out_upOrDown<=1;
+							borrow<=0;
+							flag<=0;
+						end
+					end
+					else begin
+						num<=num-1;
+					end
+				end
+			end
+			
+		        number1<=num;		
+		end
+	  end
+
+endmodule
+
+

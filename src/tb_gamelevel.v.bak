@@ -1,0 +1,84 @@
+`timescale 1ps/1ps
+module tb_gamelevel();
+reg rng_button,auth_bit,punch_button,log_out,clock,rst;
+reg [3:0] toggle_answer;
+reg [2:0] internal_id;
+wire [3:0] flash_num;
+wire  loose;
+wire win;
+wire [3:0] level_num;
+integer i;
+
+game_level test_gamelevel(rng_button,auth_bit,punch_button,log_out,clock,rst,toggle_answer,internal_id,flash_num,loose,win,level_num);
+
+always
+begin
+clock=0;
+#10; 
+clock=1;
+#10;
+end
+
+initial
+begin
+rst=0;internal_id=3'b001;
+@(posedge clock);
+#5 rst=1;
+@(posedge clock);
+auth_bit=1;
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+#5 rng_button=0;
+@(posedge clock);
+@(posedge clock);
+@(posedge clock);
+#5 rng_button=1;
+for(i=0;i<=1000;i=i+1)
+begin
+@(posedge clock);
+end
+#5 toggle_answer=4'b1101;
+@(posedge clock);
+#5 punch_button=1;
+@(posedge clock);
+#5 punch_button=0;
+@(posedge clock);
+#5 toggle_answer=4'b1001;
+@(posedge clock);
+#5 punch_button=1;
+@(posedge clock);
+#5 punch_button=0;
+@(posedge clock);
+#5 toggle_answer=4'b1000;
+@(posedge clock);
+#5 punch_button=1;
+@(posedge clock);
+#5 punch_button=0;
+
+end
+endmodule
